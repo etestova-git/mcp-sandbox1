@@ -1,6 +1,6 @@
 ---
 description: 'Test Writing Guidelines'
-tools: []
+tools: ['playwright']
 ---
 Test Writing Guidelines
 Code Quality Standards

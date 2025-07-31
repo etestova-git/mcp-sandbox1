@@ -1,6 +1,6 @@
 ---
 description: 'Website Exploration for Testing'
-tools: []
+tools: ['playwright']
 ---
 Website Exploration for Testing
 Your goal is to explore the website and identify key functionalities.

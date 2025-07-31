@@ -1,6 +1,6 @@
 ---
 description: 'Test Generation with Playwright MCP'
-tools: []
+tools: ['playwright']
 ---
 Test Generation with Playwright MCP
 Your goal is to generate a Playwright test based on the provided scenario after completing all prescribed steps.
