@@ -14,7 +14,7 @@ Hooks: Use beforeEach for setup actions common to all tests in a describe block 
 Titles: Follow a clear naming convention, such as Feature - Specific action or scenario.
 File Organization
 Location: Store all test files in the tests/ directory.
-Naming: Use the convention <feature-or-page>.spec.ts (e.g., login.spec.ts, search.spec.ts).
+Naming: Use the convention <feature-or-page>.spec.js (e.g., login.spec.js, search.spec.js).
 Scope: Aim for one test file per major application feature or page.
 Assertion Best Practices
 UI Structure: Use toMatchAriaSnapshot to verify the accessibility tree structure of a component. This provides a comprehensive and accessible snapshot.
