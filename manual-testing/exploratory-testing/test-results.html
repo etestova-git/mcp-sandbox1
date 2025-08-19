@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Testing Report - Sauce Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-case {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .test-case h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .test-case .status {
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .test-case .status.pass {
+            background-color: #dff0d8;
+            color: #3c763d;
+        }
+        .test-case .status.fail {
+            background-color: #f2dede;
+            color: #a94442;
+        }
+        .screenshot {
+            max-width: 800px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        .steps {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sauce Demo - Manual Testing Report</h1>
+    <p><strong>Date:</strong> August 18, 2025</p>
+    <p><strong>Environment:</strong> Chrome browser</p>
+
+    <div class="test-case">
+        <h2>Standard User Login</h2>
+        <span class="status pass">PASS</span>
+        <h3>Description</h3>
+        <p>Verify that a standard user can successfully log in to the application</p>
+        
+        <h3>Steps</h3>
+        <ol class="steps">
+            <li>Navigate to https://www.saucedemo.com</li>
+            <li>Enter username: "standard_user"</li>
+            <li>Enter password: "secret_sauce"</li>
+            <li>Click the Login button</li>
+        </ol>
+
+        <h3>Expected Result</h3>
+        <p>User should be successfully logged in and redirected to the inventory page</p>
+
+        <h3>Actual Result</h3>
+        <p>User was successfully logged in and redirected to https://www.saucedemo.com/inventory.html</p>
+
+        <h3>Screenshots</h3>
+        <img src="login-page.png" alt="Login Page" class="screenshot">
+        <img src="successful-login.png" alt="Successful Login" class="screenshot">
+
+        <h3>Execution Time</h3>
+        <p>2 seconds</p>
+    </div>
+
+    <div class="test-case">
+        <h2>Locked Out User Login</h2>
+        <span class="status pass">PASS</span>
+        <h3>Description</h3>
+        <p>Verify that a locked out user cannot access the application</p>
+        
+        <h3>Steps</h3>
+        <ol class="steps">
+            <li>Navigate to https://www.saucedemo.com</li>
+            <li>Enter username: "locked_out_user"</li>
+            <li>Enter password: "secret_sauce"</li>
+            <li>Click the Login button</li>
+        </ol>
+
+        <h3>Expected Result</h3>
+        <p>User should see an error message indicating the account is locked out</p>
+
+        <h3>Actual Result</h3>
+        <p>Error message displayed: "Epic sadface: Sorry, this user has been locked out."</p>
+
+        <h3>Screenshots</h3>
+        <img src="locked-out-error.png" alt="Locked Out Error" class="screenshot">
+
+        <h3>Execution Time</h3>
+        <p>1.5 seconds</p>
+    </div>
+</body>
+</html>
